@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+    <h1>{{post.title}}</h1>
+    <a href="/">List books</a>
+
+    <div class="post">
+        <h3>{{post.title}}</h3>
+        <i>{{post.dateUpdate}}</i>
+        <p>{{post.description}}</p>
+        <a href = "/post/remove/{{post.id}}">Remove</a>
+    </div>
+    
+{% endblock %}
